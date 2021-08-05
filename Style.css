@@ -1,0 +1,185 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html { scroll-behavior: smooth; } 
+
+
+/*----Navigation------*/
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand img
+{
+    height: 50px;
+    padding-left: 30px;
+}
+
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+
+.navbar-nav li a
+{
+    float: right;
+    text-align: left;
+}
+
+#nav-bar ul li a:hover
+{
+    color: #ee9b00!important;
+}
+
+.navbar
+{
+    background: #fff;
+}
+
+.navbar-toggler
+{
+    border: none!important;
+}
+
+.nav-link
+{
+    color: #555!important;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/*-----Slider-------*/
+#slider
+{
+    width: 100%;
+}
+
+
+.carousel-caption
+{
+    top: 30%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+
+.carousel-caption h5
+{
+    color: #fff;
+    font-size: 80px;
+}
+
+/*------------About---------*/
+#about
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+
+#about .btn
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.about-content
+{
+    padding-top: 20px;
+}
+
+/*-----------IT Club---------*/
+
+#ITClub
+{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url(/Images/Banners/Banner4.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #efefef!important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#ITClub h1
+{
+    text-align: center;
+    color: #efefef!important;
+    padding-bottom: 10px;
+}
+
+#ITClub h1::after
+{
+   content: '';
+   background-color: #efefef;
+   display: block;
+   height: 3px;
+   width: 170px;
+   margin: 20px auto 5px;
+}
+
+
+/*------------Techsprint----------*/
+
+#TechSprint
+{
+    background-image: linear-gradient(#bb3e03, rgba(0,0,0,0.8)),url(/Images/Banners/Banner4.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #efefef!important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#TechSprint h1
+{
+    text-align: center;
+    color: #efefef!important;
+    padding-bottom: 10px;
+}
+
+#TechSprint h1::after
+{
+   content: '';
+   background-color: #efefef;
+   display: block;
+   height: 3px;
+   width: 170px;
+   margin: 20px auto 5px;
+}
+
+/*------------Contact----------*/
+
+#contact
+{
+    background-image: linear-gradient(#94d2bd, rgba(0,0,0,0.8)),url(/Images/Banners/Banner4.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #e9d8a6!important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#contact h1
+{
+    text-align: center;
+    color: #efefef!important;
+    padding-bottom: 10px;
+}
+
+#contact h1::after
+{
+   content: '';
+   background-color: #efefef;
+   display: block;
+   height: 3px;
+   width: 170px;
+   margin: 20px auto 5px;
+}
