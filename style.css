@@ -81,6 +81,17 @@ body {
 }
 
 
+.arrow{
+    position: relative;
+    top: 50%;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
 /*-----Slider-------*/
 
 #slider {
@@ -129,7 +140,7 @@ body {
 
 #about {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     color: #555;
 }
 
@@ -143,7 +154,6 @@ body {
     flex-wrap: wrap;
     margin: 40px 0;
 }
-
 
 /*-----------IT Club---------*/
 
@@ -190,6 +200,18 @@ body {
 }
 
 
+.link-arrow{
+    z-index: 9;
+    position: relative;
+    top: -90px;
+    left: 780px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 40px 0; */
+    color: rgba(255, 255, 255, 0.726);
+}
+
 /*------------Techsprint----------*/
 
 #TechSprint {
@@ -198,8 +220,8 @@ body {
     background-position: center;
     color: #efefef!important;
     background-attachment: fixed;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #TechSprint h1 {
@@ -218,61 +240,279 @@ body {
     margin: 20px auto 5px;
 }
 
-#TechSprint a:link {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./img/techsprint/Techsprint.jpg');
-  }
-
-#TechSprint a:hover
-{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./img/banners/Banner3.jpg');
-
-}
 
 .techsprintknowmore h5
 {
     color: #efefef!important;
 }
 
+#regForm
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    width: 100px;
+}
+
+.RegText h1
+{
+    padding-top: 40px;
+    padding-bottom: 50px;
+    font-size: 50px;
+    text-align: center;
+    color: #000000!important;
+    padding-bottom: 5px;
+}
+
 
 /*------------Contact----------*/
 
-#contact {
-    background-image: linear-gradient(#94d2bd, rgba(0, 0, 0, 0.8)), url('./img/banners/Banner4.jpg');
+.contact{
+    background-image: linear-gradient(#3E2C41, rgba(212, 100, 100, 0.8)), url('./img/banners/Banner4.jpg');
     background-size: cover;
     background-position: center;
+
     color: #e9d8a6!important;
     background-attachment: fixed;
-    padding-top: 50px;
-    width: 100%;
-    padding-bottom: 50px;
+    padding: 50px 100px;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-#contact h1 {
+.contact .content{
+    max-width: 800px;
     text-align: center;
-    color: #efefef!important;
-    padding-bottom: 10px;
 }
 
-#contact h1::after {
+.contact .content h2{
+    font-size: 70px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.contact h2::after {
     content: '';
     background-color: #efefef;
     display: block;
     height: 3px;
-    width: 170px;
+    width: px;
     margin: 20px auto 5px;
 }
 
 
+.contact .content p{
+    font-weight: 300;
+    color: #fff;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #ee9b00;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputbox input,
+    .contactForm .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputbox span{
+    position: absolute;
+    left: 0%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 0.426);
+}
+
+.contactForm .inputbox:focus, .contactForm .inputbox:active {
+    background: transparent;
+}
+
+.contactForm .inputbox input:focus ~ span,
+.contactForm .inputbox input:valid ~ span,
+.contactForm .inputbox textarea:focus ~ span,
+.contactForm .inputbox textarea:valid ~ span{
+    
+    color: #ee9b00;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputbox input[type="submit"]{
+    width: 100px;
+    background: #ee9b00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media(max-width: 991px)
+{
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo, .contactForm{
+        width: 100%;
+    }
+}
+
+input[type="text"]
+{
+         background: transparent;
+         border: none;
+         outline-width: 0;
+}
+
+textarea{
+    background: transparent;
+         border: none;
+         outline-width: 0;
+}
+
+/* ----------Footer--------- */
+
 /* ----------Footer--------- */
 
 .footer {
-    width: 100%;
-    text-align: center;
-    padding: 30px 0;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sans-ser';
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
-.footer h4 {
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
+.footer__title {
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    /* color: #521eb3; */
+    background: #EE9B00;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    font-size: 2.5em;
+    text-align: center;
 }
+
+.footer__credits {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 300;
+    color: #efefef;
+}
+
+.footer-copyright{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 200;
+    color: #efefef;
+}
+
+.socialMedia{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+}
+
+/* #particles-js{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10 ;
+} */
