@@ -1,4 +1,10 @@
 window.onload = () => {
+    if(localStorage.getItem('filled') === true) {
+        document.querySelector('.Discord').style.display = 'flex';
+        document.querySelector('.correct').style.display = 'none';
+        document.querySelector('.qa').style.display = "none";
+        document.querySelector('.incorrect').style.display = "none";
+    }
     let questions = {
         1: ["What is the full form of RAM?", "random access memory"],
         2: ["What is the full form of ROM?", "read only memory"],
@@ -42,8 +48,7 @@ window.onload = () => {
         let discord = document.getElementById('discord').value
         let phone = document.getElementById('phone').value
 
-        fetch('https://it-council-api1.herokuapp.com', {
-
+        fetch('https://it-council-api1.herokuapp.com/backend_', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -57,9 +62,16 @@ window.onload = () => {
                 "phone": phone
             })
         })
-        .then(response => console.log(response))
+        .then(response => {
+            if(response.status === 200){
+                document.querySelector('.Discord').style.display = "flex"
+                document.querySelector('.correct').style.display = "none"
+                localStorage.setItem('filled', true)
+            }
+            else{
+                alert('There was an issue in registering you. Please fill the form again.')
+            }
+        })
         .catch(error => console.log(error))
-        document.querySelector('.Discord').style.display = "flex"
-        document.querySelector('.correct').style.display = "none"
     })
 }
