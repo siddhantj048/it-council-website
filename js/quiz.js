@@ -43,22 +43,21 @@ window.onload = () => {
         let phone = document.getElementById('phone').value
 
         fetch('https://it-council-api1.herokuapp.com', {
+
             method: 'POST',
             headers: {
-                'Accept': 'application/json',
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
                 "name": name,
-                "grade": grade,
+                "class": grade,
                 "section": section,
                 "dps_admission_number": adm,
                 "discord": discord,
                 "phone": phone
             })
         })
-        .then(response => (response.json()))
-        .then(data => console.log(data))
+        .then(response => console.log(response))
         .catch(error => console.log(error))
         document.querySelector('.Discord').style.display = "flex"
         document.querySelector('.correct').style.display = "none"
