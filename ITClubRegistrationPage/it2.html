@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewpoint" content="width=device-width, initial scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>IT Club Registration</title>
+    <link rel="stylesheet" href="cc.css">
+    <style>
+        #app {
+            text-align: center;
+            font-family: sans-serif;
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            z-index: 1;
+        }
+
+        #question {
+            /* font-size: 120px; */
+            font-size: 7em;
+        }
+
+        .incorrect {
+            color: rgb(255, 0, 0);
+            font-size: 30px;
+        }
+
+        .correct {
+            font-size: 0%;
+            color: transparent;
+            display: none;
+        }
+
+        #winner {
+            color: rgb(103, 255, 103);
+            font-size: 6em;
+        }
+
+        .white {
+            color: white;
+            padding-top: 10px;
+        }
+
+        canvas {
+            display: none;
+        }
+
+        .input {
+            /* font-size: 40px; */
+            font-size: 2.5em;
+            /* background-color: black; */
+            /* background-color: white; */
+            background-color: transparent;
+            /* border-color: white; */
+            appearance: none;
+            outline: none;
+            border: 2px solid white;
+            border-radius: 8px;
+            color: white;
+            caret-color: white;
+        }
+
+        /* #app {
+                display: none;
+            } */
+        #first {
+            /* font-family: "Inter"; */
+            font-family: "Ubuntu";
+            /* font-weight: 100; */
+        }
+
+        li {
+            margin: 1em 0;
+        }
+
+        #next {
+            /* right: 0; */
+            background-color: white;
+            border-color: white;
+            border: 0;
+            padding: 10px;
+            float: right;
+            margin-right: 20%;
+            border-radius: 4px;
+        }
+
+        #next:hover {
+            cursor: pointer;
+        }
+
+        .shuffle {
+            display: block;
+            background-color: white;
+            border-color: white;
+            border: 0;
+            padding: 10px;
+            border-radius: 4px;
+            /* float: right;
+                margin-right: 50%; */
+        }
+
+        .shuffle:hover {
+            cursor: pointer;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .shuffle_div {
+            display: flex;
+            justify-content: center;
+            /* text-align: center; */
+        }
+
+        .orange {
+            /* margin-top: 20px; */
+            color: #ee9b00;
+        }
+
+        @Media screen and (max-width: 768px) {
+            #question {
+                font-size: 4em;
+            }
+        }
+
+        /* #next_div {
+                right: 0;
+            }  */
+    </style>
+</head>
+
+<body>
+    <!-- <button id="shuffle">Shuffle Question</button> -->
+    <div style="text-align: center;"><img style="width: 200px; margin-top: 10px;" src="g2514.png"
+            alt="IT Council DPS Bangalore South"></div>
+    <div id="app"></div>
+    <canvas id="confetti" style="width: 1; height: 1;"></div></canvas>
+    <!-- <div id="app"></div> -->
+    <script type="text/babel">
+
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        // Nice cheating kid!
+        let questions = {
+            1: ["What is the full form of RAM?", "random access memory"],
+            2: ["What is the full form of ROM?", "read only memory"],
+            3: ["What is the full form of AI?", "artificial intelligence"],
+            4: ["What does CPU stand for?", "central processing unit"],
+            5: ["What does IP stand for in IP Address?", "internet protocol"],
+            6: ["What is the full form of USB", "universal serial bus"],
+            7: ["Which language does a computer understand", "binary"],
+            8: ["What does the Internet prefix WWW stand for?", "world wide web"],
+            9: ["What does WLAN stand for?", "wireless local area network"],
+            10: ["What is the full form of URL?", "universal resource locator"],
+        }
+
+        // function next() {
+        // const button = document.querySelector('#next')
+        // button.onclick = function() {
+        //     document.querySelector('#first').style.display="none";
+        //     document.querySelector('#app').style.display="block";
+        // }
+        // }
+
+        function App() {
+            function randomNumber(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+            const [state, setState] = React.useState({
+                // num1: Math.ceil(Math.random() * 10),
+                question: Math.floor((randomNumber(1, 11))),
+                response: "",
+                score: 0,
+                incorrect: false,
+                attempts: 0
+            });
+            React.useEffect(() => {
+                document.querySelector('#confetti').style.height = (document.querySelector('#app').offsetHeight + 100).toString() + "px"
+            }, [state.score])
+            function inputKeyPress(event) {
+                if (event.key === 'Enter') {
+                    const answer = state.response;
+                    if (questions[state.question][1] === answer.toLowerCase()) {
+                        setState({
+                            ...state,
+                            // num1: Math.ceil(Math.random() * 10), 
+                            question: Math.floor((randomNumber(1, 11))),
+                            score: state.score + 1,
+                            response: "",
+                            incorrect: false,
+                            attempts: state.attempts + 1
+                        })
+                    } else {
+                        setState({
+                            ...state,
+                            //score:state.score-1,
+                            response: "",
+                            incorrect: true,
+                            attempts: state.attempts + 1
+                        })
+                    }
+                }
+            }
+
+            function updateResponse(event) {
+                setState({
+                    ...state,
+                    response: event.target.value
+                });
+            }
+
+            function shuffleQuestion(event) {
+                location.reload()
+            }
+
+            if (state.score == 1) {
+                document.querySelector('canvas').style.display = "block"
+                return (
+                    <div>
+                        <div id="winner">You won!</div>
+                        <div class="white">Total Attempts: {state.attempts}</div>
+                        <div class="white"><strong>Upon submission of the Google Form given below, you will be provided with the Discord Link as well as the Whatsapp Group Link.</strong></div>
+                        <br />
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc7nW9Hg6n8D7ZAwqDzNx0Aiy7r_EzIoetsTFu5VlaclQZMxg/viewform?embedded=true" width="640" height="2000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
+                )
+            }
+            return (
+                <div>
+                    <div className={state.incorrect ? "orange" : "orange"} id="question">{questions[state.question][0]}</div>
+                    <input autoFocus={true} onKeyPress={inputKeyPress} onChange={updateResponse} value={state.response} className="input" />
+                    <div className="white">Attempts: {state.attempts}</div>
+                    <div className={state.incorrect ? "incorrect" : "correct"}>Incorrect Answer! Try again.</div>
+                    <br />
+                    <div className="shuffle_div"><button className={state.incorrect ? "shuffle" : "correct"} onClick={shuffleQuestion}>Shuffle Question</button></div>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.querySelector('#app'));
+    </script>
+    <script src="cc.js"></script>
+</body>
+
+</html>
