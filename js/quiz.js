@@ -35,6 +35,31 @@ window.onload = () => {
 
     infoForm.addEventListener('submit', (e) => {
         e.preventDefault()
+        let name = document.getElementById('name').value
+        let grade = document.getElementById('class').value
+        let section = document.getElementById('section').value
+        let adm = document.getElementById('adm').value
+        let discord = document.getElementById('discord').value
+        let phone = document.getElementById('phone').value
+
+        fetch('https://it-council-api1.herokuapp.com', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                "name": name,
+                "grade": grade,
+                "section": section,
+                "dps_admission_number": adm,
+                "discord": discord,
+                "phone": phone
+            })
+        })
+        .then(response => (response.json()))
+        .then(data => console.log(data))
+        .catch(error => console.log(error))
         document.querySelector('.Discord').style.display = "flex"
         document.querySelector('.correct').style.display = "none"
     })
