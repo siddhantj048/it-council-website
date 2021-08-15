@@ -14,8 +14,8 @@ a {
 
 .jumbo {
   height: 100vh;
-  background: url("/img/techsprint/game-mobile.jpg"), -webkit-gradient(linear, left top, left bottom, from(#00ff00), to(#0f0f0f));
-  background: url("/img/techsprint/game-mobile.jpg"), linear-gradient(to bottom, #00ff00 0%, #0f0f0f 100%);
+  background: url("../img/game-mobile.jpg"), -webkit-gradient(linear, left top, left bottom, from(#00ff00), to(#0f0f0f));
+  background: url("../img/game-mobile.jpg"), linear-gradient(to bottom, #00ff00 0%, #0f0f0f 100%);
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
@@ -410,7 +410,7 @@ a {
   letter-spacing: 1px;
   margin-bottom: 0.5rem;
   /* color: #521eb3; */
-  background: #EE9B00;
+  background: #ee9b00;
   text-align: center;
   -webkit-text-fill-color: transparent;
   background-clip: content-box;
