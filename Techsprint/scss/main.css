@@ -100,6 +100,10 @@ a {
   cursor: pointer;
 }
 
+nav{
+  background-color: #000000c9;
+}
+
 #nav-bar {
   position: -webkit-sticky;
   position: sticky;

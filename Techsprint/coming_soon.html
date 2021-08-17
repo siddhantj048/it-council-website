@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <title>Coming Soon!</title>
+            <link rel="stylesheet" href="/Techsprint/style.css">
+            <link rel="stylesheet" href="/Techsprint/Particles/css/style.css" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+            <link rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+            <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+            <link rel="icon" href="./img/Logo.png">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://kit.fontawesome.com/35d0600025.js" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script>
+              $(document).ready(function(){
+                $(".default_option").click(function(){
+                  $(this).parent().toggleClass("active");
+                })
+
+                $(".select_ul li").click(function(){
+                  var currentele = $(this).html();
+                  $(".default_option li").html(currentele);
+                  $(this).parents(".select_wrap").removeClass("active");
+                })
+              });
+            </script>
+    </head>
+
+    <body>
+        <!-- # intro 
+        ================================================== -->
+
+
+          <!----Navigation Bar-->
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded fixed-top bgcolor">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html"><img src="/img/Logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+            <li class="nav-item act">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <section class="thispage">
+
+        <section id="intro" class="s-intro">
+
+          <div id="particles-js" class="s-intro__particles"></div>
+
+          <div class="row s-intro__content" id="counterandtext" style="position: relative; top:-400px; left:100px">
+              <div class="column lg-12">
+                  
+                  <div class="counter" >
+                      <div class="counter__time" >
+                          <span class="ss-days">365</span>
+                          <span>days</span>
+                      </div>
+                      <div class="counter__time">
+                          <span class="ss-hours">01</span>
+                          <span>hours</span>
+                      </div>
+                      <div class="counter__time minutes">
+                          <span class="ss-minutes">01</span>
+                          <span>mins</span>
+                      </div>
+                      <div class="counter__time">
+                          <span class="ss-seconds">55</span>
+                          <span>secs</span>
+                      </div>
+                  </div>  <!-- end counter -->
+
+                  <div class="s-intro__content-bottom">
+                      <h1 class="s-intro__content-title"; style="color:rgba(255, 255, 255, 0.692); font-size:2em">For TechSprint.</h1><br>
+                      <p style="font-size: 25px; color: rgba(255, 255, 255, 0.315);">
+                      Techsprint is Delhi Public School Souths annually hosted techfest. <br>
+                      With competetions ranging from gaming to hacking, our job is to make sure you have a blast!<br>
+                       
+                      </p>
+                  </div>
+
+              </div>
+
+          </div> <!-- intro__content -->
+
+      </section> <!-- end s-intro -->
+
+  
+
+
+
+  
+
+
+            <!------------Footer---------->
+            
+  <footer class="footer" id="footer">
+    <h1 class="footer__credits" style="font-size:20px">Made by Siddhant Joshi and Zaid Mallik</h1>
+    <h3 class="footer-copyright"; style="font-size:15px; color: #efefef !important;"> <i class="far fa-copyright"></i> IT COUNCIL DPSS 2021</h3>
+
+    <div class="socialMedia" style="color: white;">
+      <a href="https://www.instagram.com/dipsitcouncil/" style="text-decoration: none;"><i
+          class="fab fa-instagram"></i></a>
+
+    </div>
+
+
+
+        </footer> 
+
+    </div> <!-- end pagewrap -->
+    <script>
+      particlesJS.load('particles-js', 'Techsprint/Particles/particles.json', function() {
+          console.log('callback - particles.js config loaded');
+      });
+  </script>
+
+    <script type="text/javascript" src="/Techsprint/Particles/particles.js"></script>
+        <script type="text/javascript" src="/Techsprint/Particles/app.js"></script>
+        <script type="text/javascript" src="JS/main.js"></script>
+      </section>
+
+      <script type="text/javascript">
+        (function(d, m){
+            var kommunicateSettings = 
+                {"appId":"2f596413eb2feef3166218282edcb051","popupWidget":true,"automaticChatOpenOnNavigation":true};
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+    </script>
+    </body>
+</html>

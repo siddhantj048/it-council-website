@@ -98,7 +98,7 @@
   <!---------Techsprint---------->
   <section id="TechSprint" data-aos="flip-up">
     <div class="container">
-      <a href="Techsprint/index.html" style="text-decoration: none">
+      <a href="./techsprint/" style="text-decoration: none">
         <h1>TechSprint</h1>
         <div class="link-arrow">
           <i class="fa fa-angle-double-right fa-5x" aria-hidden="true"></i>
@@ -118,8 +118,7 @@
       <div class="Glasscard">
         <div class="content">
           <div class="CodeJam">
-            <a href="https://dpsitcouncil.tech/dipscodejam2021" style="text-align: center;"> <img
-                src="./img/codeJam.png" style="width: 70vw;">
+            <a href="./dipscodejam2021" style="text-align: center;"> <img src="./img/codeJam.png" style="width: 70vw;">
             </a>
             </d>
           </div>
@@ -132,12 +131,6 @@
             <section id="ITClub">
               <div class="container flex-column text-center">
                 <h1>IT Club</h1>
-                <!-- <h8>TECH CLUB is a Technology Student Organization that provides personal growth, leadership, and learning
-                  opportunities in technology, innovation, design, and engineering. Members apply and integrate STEM
-                  concepts
-                  through hands-on activities.
-                </h8>
-                <h6 class="mt-4">Check out the official Club website blablablabla.com</h6> -->
               </div>
               <!-- Registration quiz -->
               <h2 class="w-100 text-center mt-4 display-6">Register Now!</h2>
@@ -153,16 +146,6 @@
                   Try
                   again.
                 </p>
-                <!-- <div class="contactForm">
-                  <form>
-                    <div class="inputbox">
-                      <input type="text" name="" required='required' id="name">
-                      <span>Your Answer</span>
-                    </div>
-                  <button class=" btn btn-light submit" type="submit">Submit</button>
-          
-                  </form>
-                </div> -->
                 <form class="answer-form w-full d-flex flex-column align-items-center justify-content-center mt-4 mb-4">
                   <input class="answer-field mb-4 ps-3 pt-2 pb-2"
                     style="outline: none; border: none; background-color: transparent; border-bottom: 2px solid rgba(255, 255, 255);"
@@ -213,20 +196,12 @@
       </div>
   </section>
   </section>
-
-
-  <!----------IT Club---------->
-
-
-
   <!----------Contact---------->
 
   <section id="Contact" class="contact" data-aos="flip-down">
     <div class="content">
 
       <h2>Contact Us</h2>
-      <!-- <p> some text blablbalbalalba</p> -->
-
     </div>
 
     <div class="container">
@@ -258,48 +233,54 @@
           </div>
         </div>
       </div>
+
+
+      <div class="contactForm">
+        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+          <div class="inputbox">
+            <input type="text" name="Name:" required='required' id="name">
+            <span>Full Name</span></label>
+          </div>
+
+          <div class="inputbox">
+            <input type="text" name="Email:" required='required' id="email">
+            <span>Email</span>
+          </div>
+
+          <div class="inputbox">
+            <textarea required="required" id="message" name="Message:"></textarea>
+            <span>What would you like to say to us?</span>
+          </div>
+
+          <div data-netlify-recaptcha="true"></div>
+
+          <div class="inputbox">
+            <input
+              onclick="alert('We could not send your message. Kindly mail us on dps.it.council@gmail.com. Sorry for the inconvinience caused.')"
+              type="submit" name="Submit:" value="Send">
+          </div>
+        </form>
+      </div>
     </div>
 
   </section>
 
   <br>
 
-  </main><!-- End #main -->
 
 
   <!------------Footer---------->
   <footer class="footer" id="footer">
-    <!-- <h1 class="footer__title">IT Council</h1>  
-             <h6 class="footer__date" style="color: #EE9B00;font-weight:600;">dps.it.council@gmail.com</h6> -->
-    <h1 class="footer__credits">Made by Siddhant Joshi and Zaid Mallik </h1>
-    <h3 class="footer-copyright">IT COUNCIL DPSS 2021</h3>
+    <h1 class="footer__credits" style="font-size:20px">Made by Siddhant Joshi and Zaid Mallik</h1>
+    <h3 class="footer-copyright" ; style="font-size:15px; color: #efefef !important;"> <i class="far fa-copyright"></i>
+      IT COUNCIL DPSS 2021</h3>
+
 
     <div class="socialMedia" style="color: white;">
       <a href="https://www.instagram.com/dipsitcouncil/" style="text-decoration: none;"><i
           class="fab fa-instagram"></i></a>
     </div>
   </footer>
-
-
-
-  <script type="text/javascript">
-    (function (d, m) {
-      var kommunicateSettings = {
-        "appId": "2f596413eb2feef3166218282edcb051",
-        "popupWidget": true,
-        "automaticChatOpenOnNavigation": true
-      };
-      var s = document.createElement("script");
-      s.type = "text/javascript";
-      s.async = true;
-      s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
-      var h = document.getElementsByTagName("head")[0];
-      h.appendChild(s);
-      window.kommunicate = m;
-      m._globals = kommunicateSettings;
-    })(document, window.kommunicate || {});
-    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
-  </script>
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
@@ -314,6 +295,18 @@
       offset: 400,
       duration: 1000
     });
+  </script>
+
+  <script type="text/javascript">
+    (function (d, m) {
+      var kommunicateSettings =
+        { "appId": "2f596413eb2feef3166218282edcb051", "popupWidget": true, "automaticChatOpenOnNavigation": true };
+      var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+      s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+      var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+      window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
   </script>
 </body>
 
