@@ -14,8 +14,7 @@ a {
 
 .jumbo {
     height: 100vh;
-    background: url('../img/game-mobile.jpg'),
-        linear-gradient(to bottom, #00ff00 0%, #0f0f0f 100%);
+    background: url('/img/techsprint/game-mobile.jpg'), linear-gradient(to bottom, #00ff00 0%, #0f0f0f 100%);
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
@@ -49,7 +48,7 @@ a {
     }
     &__btn {
         width: 100%;
-        text-align: center;
+        text-align: center
     }
     &__cta {
         font-family: 'IBM Plex Sans';
@@ -95,7 +94,7 @@ a {
 }
 
 #nav-bar ul li a:hover {
-    color: #ee9b00 !important;
+    color: #ee9b00!important;
 }
 
 .navbar {
@@ -103,7 +102,7 @@ a {
 }
 
 .navbar-toggler {
-    border: none !important;
+    border: none!important;
 }
 
 .navbar-toggler-icon {
@@ -111,7 +110,7 @@ a {
 }
 
 .nav-link {
-    color: rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255)!important;
     font-weight: 500;
     font-size: 16px;
 }
@@ -149,8 +148,7 @@ a {
 }
 
 #valo {
-    background: url('../img/valo.jpg'),
-        linear-gradient(to bottom, #00ff00 0%, #0f0f0f 100%);
+    background: url('../img/valo.jpg'), linear-gradient(to bottom, #00ff00 0%, #0f0f0f 100%);
     background-size: cover;
     background-position: center;
     height: 25vh;
@@ -164,8 +162,7 @@ a {
 }
 
 #fortnite {
-    background: url('../img/fortnite.jpg'),
-        linear-gradient(to bottom, #00ff00 0%, #0f0f0f 100%);
+    background: url('../img/fortnite.jpg'), linear-gradient(to bottom, #00ff00 0%, #0f0f0f 100%);
     background-size: cover;
     background-position: center;
     height: 25vh;
@@ -179,8 +176,7 @@ a {
 }
 
 #codm {
-    background: url('../img/codm.jpg'),
-        linear-gradient(to bottom, #00ff00 0%, #0f0f0f 100%);
+    background: url('../img/codm.jpg'), linear-gradient(to bottom, #00ff00 0%, #0f0f0f 100%);
     background-size: cover;
     background-position: center;
     height: 25vh;
@@ -194,8 +190,7 @@ a {
 }
 
 #bgmi {
-    background: url('../img/bgmi.jpeg'),
-        linear-gradient(to bottom, #00ff00 0%, #0f0f0f 100%);
+    background: url('../img/bgmi.jpeg'), linear-gradient(to bottom, #00ff00 0%, #0f0f0f 100%);
     background-size: cover;
     background-position: center;
     height: 25vh;
@@ -265,6 +260,7 @@ a {
     }
 }
 
+
 /* ----------Footer--------- */
 
 .footer {
@@ -283,7 +279,7 @@ a {
     letter-spacing: 1px;
     margin-bottom: 0.5rem;
     /* color: #521eb3; */
-    background: #ee9b00;
+    background: #EE9B00;
     text-align: center;
     -webkit-text-fill-color: transparent;
     background-clip: content-box;
