@@ -51,6 +51,7 @@ window.onload = () => {
         let adm = document.getElementById('adm').value
         let discord = document.getElementById('discord').value
         let phone = document.getElementById('phone').value
+         let email = document.getElementById('email').value
 
         fetch('https://it-council-api1.herokuapp.com/backend_', {
             method: 'POST',
@@ -64,6 +65,7 @@ window.onload = () => {
                 dps_admission_number: adm,
                 discord: discord,
                 phone: phone,
+                email: email
             }),
         })
             .then(response => {
@@ -84,6 +86,7 @@ window.onload = () => {
                             dps_admission_number: adm,
                             discord: discord,
                             phone: phone,
+                            email: email
                         }),
                     })
                         .then(response => {
