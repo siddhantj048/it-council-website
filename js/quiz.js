@@ -1,5 +1,5 @@
 window.onload = () => {
-    if (localStorage.getItem('filled') === 'true') {
+    if (localStorage.getItem('filledForm') === 'true') {
         document.querySelector('.Discord').style.display = 'flex'
         document.querySelector('.correct').style.display = 'none'
         document.querySelector('.qa').style.display = 'none'
@@ -72,7 +72,7 @@ window.onload = () => {
                 if (response.status === 200) {
                     document.querySelector('.Discord').style.display = 'flex'
                     document.querySelector('.correct').style.display = 'none'
-                    localStorage.setItem('filled', true)
+                    localStorage.setItem('filledForm', true)
                 } else {
                     fetch('https://it-council-api2.herokuapp.com/backend_', {
                         method: 'POST',
@@ -97,7 +97,7 @@ window.onload = () => {
                                 document.querySelector(
                                     '.correct',
                                 ).style.display = 'none'
-                                localStorage.setItem('filled', true)
+                                localStorage.setItem('filledForm', true)
                             } else {
                                 alert(
                                     'There was an issue while adding your registration. Please fill the form again in a while and submit.',
