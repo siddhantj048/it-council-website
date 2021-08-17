@@ -213,7 +213,7 @@ nav{
 }
 
 .answer-field {
-    width: 50%;
+    width: 80%;
 }
 
 .Discord {
@@ -221,12 +221,6 @@ nav{
     display: none;
     align-items: center;
     justify-content: center;
-}
-
-@media screen and (min-width: 767px) {
-    .answer-field {
-        width: 25%;
-    }
 }
 
 .link-arrow {
