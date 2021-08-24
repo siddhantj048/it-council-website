@@ -208,6 +208,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: #000;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -239,7 +240,6 @@ a {
     }
     &__rules-item {
         margin-top: 2rem;
-        word-break: break-all;
     }
 }
 
