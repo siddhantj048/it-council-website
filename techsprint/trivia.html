@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-  <link rel="icon" href="/img/techsprintLogo.png" sizes="16x16 32x32" >
+    <link rel="icon" href="/img/techsprintLogo.png" sizes="16x16 32x32">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Trivia | DiPS TechSprint 2021</title>
     <meta name="description" content="">
@@ -22,6 +22,7 @@
         background-position: center;
         background-attachment: fixed;
     }
+    
 </style>
 
 <body>
@@ -79,35 +80,30 @@
         <h1 class="games__title">Rules</h1>
         <ul class="games__rules">
             <li class="games__rules-item">This event will consist of 2 rounds.</li>
-            <li class="games__rules-item">Contestants will have to be on a zoom call while attending the first round.</li>
-            <li class="games__rules-item">Contestants will be provided a form with all the trivia questions and must submit their answers within the given<br> time period of the quiz.</li>
-            <li class="games__rules-item">Contestants are not supposed to use any sort of external help (internet browsers, books, other individuals, etc).</li>
+            <li class="games__rules-item">Contestants will have to be on a zoom call while attending the first round.
+            </li>
+            <li class="games__rules-item">Contestants will be provided a form with all the trivia questions and must
+                submit their answers within the given<br> time period of the quiz.</li>
+            <li class="games__rules-item">Contestants are not supposed to use any sort of external help (internet
+                browsers, books, other individuals, etc).</li>
             <li class="games__rules-item">
-                Those who have been shortlisted for the second round which is the 'Round Robin Questionnaire Session' must<br> join a zoom call and keep their camera switched on throughout the whole round.</li>
+                Those who have been shortlisted for the second round which is the 'Round Robin Questionnaire Session'
+                must<br> join a zoom call and keep their camera switched on throughout the whole round.</li>
         </ul>
     </div>
 
-<div id="forms">
-        
     <div class="register" id="register">
-    <h1 class="register__title">JUNIORS</h1>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfYYsdr-Ek-Pt5xgWi3wIuY3EeGIC7SMLAm0b7WAe_b2Djt_Q/viewform?embedded=true" width="640" height="1773" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <h1 class="register__title">JUNIORS</h1>
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfYYsdr-Ek-Pt5xgWi3wIuY3EeGIC7SMLAm0b7WAe_b2Djt_Q/viewform?embedded=true"
+            width="100%" height="1460" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
-
     <div class="register" id="senregister">
         <h1 class="register__title">SENIORS</h1>
-            <iframe 
+        <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLScu-7f8bB5mYX2If-zaDyfSTvM4ddERUTxrWoXHmHJ8Z3rnSw/viewform?embedded=true"
-                width="800" 
-                height="1700" 
-                frameborder="0" 
-                marginheight="0" 
-                marginwidth="0"
-                onload="loaded()">
-                    Loading...
-            </iframe>
+            width="100%" height="1460" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
-</div>
     <footer class="footer" id="footer">
         <!-- <h1 class="footer__title">IT Council</h1>  
              <h6 class="footer__date" style="color: #EE9B00;font-weight:600;">dps.it.council@gmail.com</h6> -->
@@ -143,16 +139,16 @@
         /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
     </script>
 
-<script type="application/javascript">
-    var loadCounter = 0;
-    var loaded = function() {
-        loadCounter += 1;
-        if (loadCounter === 2) {
-            $("iframe").attr("height", "1700");
-            $(window).scrollTo(315,0)
+    <script type="application/javascript">
+        var loadCounter = 0;
+        var loaded = function () {
+            loadCounter += 1;
+            if (loadCounter === 2) {
+                $("iframe").attr("height", "1700");
+                $(window).scrollTo(315, 0)
+            }
         }
-    }
-</script>
+    </script>
 </body>
 
 </html>
