@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="utf-8">
+  <link rel="icon" href="/img/techsprintLogo.png" sizes="16x16 32x32" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>DiPS TechSprint 2021 | Trivia</title>
+    <title>Trivia | DiPS TechSprint 2021</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
@@ -40,13 +41,10 @@
                             <a class="nav-link active" aria-current="page" href="../">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./">Techsprint</a>
+                            <a class="nav-link" href="/techsprint/indexx.html">Techsprint</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#register">Juniors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#senregister">Seniors</a>
+                            <a class="nav-link" href="#register">Register</a>
                         </li>
                     </ul>
                 </div>
@@ -56,8 +54,7 @@
     <div class="jumbo">
         <div class="jumbo__container">
             <h1 class="jumbo__title">Welcome to Trivia</h1>
-            <p class="jumbo__tagline">lorem ipsum dolor sit amet, consectetur adip lorlorem ipsum dolor sit amet,
-                consectetur ad</p>
+            <p class="jumbo__tagline">Think you know it all? Put your IT knowledge to a test!</p>
 
             <a href="#register" class="jumbo__btn"><button class="jumbo__cta">Register</button></a>
         </div>
@@ -66,12 +63,14 @@
         <div class="about__container">
             <h1 class="about__title">About</h1>
             <div class="about__content">
-                <p class="about__tagline">This event is done virtually. This is a one day challenge, where the
-                    contestants are supposed to crack cryptic messages using their IT knowledge, where one challenge
-                    leads to another to find the final code.
-                    The prerequisites are basic knowledge regarding computers, some basic programming knowledge, and
-                    curiosity
-
+                <p class="about__tagline">This event will be conducted in the form of a quiz having
+                    two rounds. <br>The first round will consist of a trivia quiz
+                    where contestants will have to answer tech-related
+                    questions in a Multiple Choice Question format. Those who
+                    qualify for the second round will have to take part in a
+                    Round Robin Questionnaire session. <br><br>The contestants that
+                    bag the most number of points in this round shall be
+                    declared as the winners!
                 </p>
             </div>
         </div>
@@ -79,30 +78,36 @@
     <div class="games">
         <h1 class="games__title">Rules</h1>
         <ul class="games__rules">
-            <li class="games__rules-item">You will be provided a document containing information about the project to be
-                built along with a starting template. You would be required to fulfill the requirements in the document
-                and submit the project.</li>
-            <li class="games__rules-item">The document would be provided to you one day prior to the judging phase.</li>
-            <li class="games__rules-item">You are free to use CSS libraries like Bootstrap and TailwindCSS and JS
-                libraries like aos.JS</li>
-            <li class="games__rules-item">Your code will be judged on the basis of readability, comments. Your website
-                would be judged on the basis of creatvity, design, layout, typography, color scheme, responsiveness,
-                animations (optional)</li>
+            <li class="games__rules-item">This event will consist of 2 rounds.</li>
+            <li class="games__rules-item">Contestants will have to be on a zoom call while attending the first round.</li>
+            <li class="games__rules-item">Contestants will be provided a form with all the trivia questions and must submit their answers within the given<br> time period of the quiz.</li>
+            <li class="games__rules-item">Contestants are not supposed to use any sort of external help (internet browsers, books, other individuals, etc).</li>
+            <li class="games__rules-item">
+                Those who have been shortlisted for the second round which is the 'Round Robin Questionnaire Session' must<br> join a zoom call and keep their camera switched on throughout the whole round.</li>
         </ul>
     </div>
 
+<div id="forms">
+        
     <div class="register" id="register">
-        <h1 class="register__title">JUNIORS</h1>
-        <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfYYsdr-Ek-Pt5xgWi3wIuY3EeGIC7SMLAm0b7WAe_b2Djt_Q/viewform?embedded=true"
-            width="100%" height="1460" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <h1 class="register__title">JUNIORS</h1>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfYYsdr-Ek-Pt5xgWi3wIuY3EeGIC7SMLAm0b7WAe_b2Djt_Q/viewform?embedded=true" width="640" height="1773" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
+
     <div class="register" id="senregister">
         <h1 class="register__title">SENIORS</h1>
-        <iframe
+            <iframe 
             src="https://docs.google.com/forms/d/e/1FAIpQLScu-7f8bB5mYX2If-zaDyfSTvM4ddERUTxrWoXHmHJ8Z3rnSw/viewform?embedded=true"
-            width="100%" height="1460" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                width="800" 
+                height="1700" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0"
+                onload="loaded()">
+                    Loading...
+            </iframe>
     </div>
+</div>
     <footer class="footer" id="footer">
         <!-- <h1 class="footer__title">IT Council</h1>  
              <h6 class="footer__date" style="color: #EE9B00;font-weight:600;">dps.it.council@gmail.com</h6> -->
@@ -137,6 +142,17 @@
         })(document, window.kommunicate || {});
         /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
     </script>
+
+<script type="application/javascript">
+    var loadCounter = 0;
+    var loaded = function() {
+        loadCounter += 1;
+        if (loadCounter === 2) {
+            $("iframe").attr("height", "1700");
+            $(window).scrollTo(315,0)
+        }
+    }
+</script>
 </body>
 
 </html>
