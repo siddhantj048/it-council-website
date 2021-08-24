@@ -14,7 +14,7 @@ a {
 
 .jumbo {
     height: 100vh;
-    // background: url('/img/techsprint/game-mobile.jpg'), linear-gradient(to bottom, #00ff00 0%, #0f0f0f 100%);
+    background: url('/img/techsprint/game-mobile.jpg'), linear-gradient(to bottom, #00ff00 0%, #0f0f0f 100%);
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
@@ -252,11 +252,10 @@ a {
     padding-bottom: 2rem;
     background-color: #000;
     &__title {
-        font-family: 'IBM Plex Sans';
-        letter-spacing: 1px;
         font-size: 2.5em;
+        font-family: 'IBM Plex Sans';
         color: #e9d8a6;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 }
 

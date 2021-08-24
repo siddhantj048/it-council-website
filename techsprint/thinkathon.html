@@ -12,7 +12,7 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
     <link rel="stylesheet" href="./scss/main.css">
-  <link rel="icon" href="/img/techsprintLogo.png" sizes="16x16 32x32" >
+    <link rel="icon" href="/img/techsprintLogo.png" sizes="16x16 32x32">
 
 </head>
 <style>
@@ -47,7 +47,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#register">Register</a>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
@@ -102,36 +102,20 @@
             <li class="games__rules-item">The event will be held live on zoom.</li>
         </ul>
     </div>
-    <div id="forms">
-        
     <div class="register" id="register">
-    <h1 class="register__title">JUNIORS</h1>
-    <iframe 
-    src="https://docs.google.com/forms/d/e/1FAIpQLSdMzaD1iuEEan7PgqlKeT5trNrHezzNC_xIdaMoqdPBOjhe0Q/viewform?embedded=true"
-        width="700" 
-        height="1700" 
-        frameborder="0" 
-        marginheight="0" 
-        marginwidth="0"
-        onload="loaded()">
-            Loading...
-    </iframe>
+        <h1 class="register__title">JUNIORS</h1>
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfYYsdr-Ek-Pt5xgWi3wIuY3EeGIC7SMLAm0b7WAe_b2Djt_Q/viewform?embedded=true"
+            width="100%" height="1460" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
-
     <div class="register" id="senregister">
         <h1 class="register__title">SENIORS</h1>
-            <iframe 
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfMVKe0mOOzhhP6bHwUbvwXiUzvVdC2M5kvuBW4s9l0tn8aQA/viewform?embedded=true"
-                width="800" 
-                height="1700" 
-                frameborder="0" 
-                marginheight="0" 
-                marginwidth="0"
-                onload="loaded()">
-                    Loading...
-            </iframe>
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScu-7f8bB5mYX2If-zaDyfSTvM4ddERUTxrWoXHmHJ8Z3rnSw/viewform?embedded=true"
+            width="100%" height="1460" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
-</div>
+
+
     <footer class="footer" id="footer">
         <!-- <h1 class="footer__title">IT Council</h1>  
              <h6 class="footer__date" style="color: #EE9B00;font-weight:600;">dps.it.council@gmail.com</h6> -->
@@ -167,16 +151,16 @@
         /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
     </script>
 
-<script type="application/javascript">
-    var loadCounter = 0;
-    var loaded = function() {
-        loadCounter += 1;
-        if (loadCounter === 2) {
-            $("iframe").attr("height", "1700");
-            $(window).scrollTo(315,0)
+    <script type="application/javascript">
+        var loadCounter = 0;
+        var loaded = function () {
+            loadCounter += 1;
+            if (loadCounter === 2) {
+                $("iframe").attr("height", "1700");
+                $(window).scrollTo(315, 0)
+            }
         }
-    }
-</script>
+    </script>
 </body>
 
 </html>
