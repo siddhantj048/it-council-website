@@ -55,7 +55,7 @@ body{
 } */
 
 nav{
-    background-color: #000000c9 !important;
+    background-color: #0000005e !important;
   }
 
 #nav-bar {
@@ -920,3 +920,23 @@ textarea {
         height: 600px !important;
     }
 }
+
+.ml4 {
+    position: fixed;
+    font-weight: 900;
+    font-size: 4.5em;
+    background-color: #000000;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .ml4 .letters {
+    position: absolute;
+    margin: auto;
+    left: 45%;
+    top: 45%;
+    right: 0;
+    color:white;
+  }

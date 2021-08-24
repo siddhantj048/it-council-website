@@ -5,13 +5,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>DiPS TechSprint 2021 |Thinkathon</title>
+    <title>Thinkathon | DiPS TechSprint 2021 </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
     <link rel="stylesheet" href="./scss/main.css">
+  <link rel="icon" href="/img/techsprintLogo.png" sizes="16x16 32x32" >
+
 </head>
 <style>
     .jumbo {
@@ -40,13 +42,10 @@
                             <a class="nav-link active" aria-current="page" href="../">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./">Techsprint</a>
+                            <a class="nav-link" href="/techsprint/indexx.html">Techsprint</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#register">Juniors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#senregister">Seniors</a>
+                            <a class="nav-link" href="#register">Register</a>
                         </li>
                         
                     </ul>
@@ -57,8 +56,7 @@
     <div class="jumbo">
         <div class="jumbo__container">
             <h1 class="jumbo__title">Welcome to Thinkathon!</h1>
-            <p class="jumbo__tagline">lorem ipsum dolor sit amet, consectetur adip lorlorem ipsum dolor sit amet,
-                consectetur ad</p>
+            <p class="jumbo__tagline">Virtual Hackathon!</p>
 
             <a href="#register" class="jumbo__btn"><button class="jumbo__cta">Register</button></a>
         </div>
@@ -67,10 +65,16 @@
         <div class="about__container">
             <h1 class="about__title">About</h1>
             <div class="about__content">
-                <p class="about__tagline">THIS IS A HACKATHON WHICH IS TAKEN VIRTUALLY. THIS EVENT WILL TAKE PLACE IN 2
-                    STAGES, THE FIRST STAGE WILL BE A PRESENTATION ROUND AFTER WHICH (IF THE QUALIFY) THERE WILL BE A
-                    SECOND ROUND IN WHICH THEY CAN CODE THE BASE OF THEIR IDEA OR MAKE A 3D MODEL OF IT. THE TEAM WITH
-                    THE BEST IDEA AND EXECUTION WILL BE THE WINNER.
+                <p class="about__tagline">
+                    This event is a virtual hackathon that will be conducted
+                    in two stages.<br><br> In the first stage, contestants will have
+                    to present their ideas and solutions for the topics given
+                    to them. Those who qualify for the first stage will have
+                    to take part in the second stage.<br><br> The second stage will
+                    consist of a product designing challenge where
+                    contestants can code or can design a 2D/3D model of the
+                    base of their idea. The team with the best idea and
+                    execution wins!
                 </p>
             </div>
         </div>
@@ -82,35 +86,52 @@
             <li class="games__rules-item">You will be given 2 days to prepare a presentation on the topic prior to the
                 event.</li>
             <li class="games__rules-item">The presentation should be done through a PPT. </li>
-            <li class="games__rules-item">You will have to turn on your microphone and camera to present(if a member
+            <li class="games__rules-item">You will have to turn on your microphone and camera to present<br>(if a member
                 fails to turn on his camera, it will result in points deduction).</li>
             <li class="games__rules-item">Judges will decide who will advance to the second round based on the
                 presentation.</li>
             <li class="games__rules-item">The rubics for the selection will be given prior to the event.</li>
             <li class="games__rules-item">The top 3 teams will advance to the second round where they will have to make
-                the product design based on the topic they choose.</li>
+                the product design based on <br>the topic they choose.</li>
             <li class="games__rules-item">The product design can be a basic website(HTML page) or a basic 3d render of
                 the product.</li>
             <li class="games__rules-item">The top 3 teams will be given 5 hours after their selection to prepare for the
                 second round.</li>
             <li class="games__rules-item"> Each team/person will be given 5 mins to present their PPT to the judges.
             </li>
-            <li class="games__rules-item">The event will be held live on zoom..</li>
+            <li class="games__rules-item">The event will be held live on zoom.</li>
         </ul>
     </div>
-
+    <div id="forms">
+        
     <div class="register" id="register">
-        <h1 class="register__title">JUNIORS</h1>
-        <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdMzaD1iuEEan7PgqlKeT5trNrHezzNC_xIdaMoqdPBOjhe0Q/viewform?embedded=true"
-            width="100%" height="1460" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <h1 class="register__title">JUNIORS</h1>
+    <iframe 
+    src="https://docs.google.com/forms/d/e/1FAIpQLSdMzaD1iuEEan7PgqlKeT5trNrHezzNC_xIdaMoqdPBOjhe0Q/viewform?embedded=true"
+        width="700" 
+        height="1700" 
+        frameborder="0" 
+        marginheight="0" 
+        marginwidth="0"
+        onload="loaded()">
+            Loading...
+    </iframe>
     </div>
+
     <div class="register" id="senregister">
         <h1 class="register__title">SENIORS</h1>
-        <iframe
+            <iframe 
             src="https://docs.google.com/forms/d/e/1FAIpQLSfMVKe0mOOzhhP6bHwUbvwXiUzvVdC2M5kvuBW4s9l0tn8aQA/viewform?embedded=true"
-            width="100%" height="1460" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                width="800" 
+                height="1700" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0"
+                onload="loaded()">
+                    Loading...
+            </iframe>
     </div>
+</div>
     <footer class="footer" id="footer">
         <!-- <h1 class="footer__title">IT Council</h1>  
              <h6 class="footer__date" style="color: #EE9B00;font-weight:600;">dps.it.council@gmail.com</h6> -->
@@ -145,6 +166,17 @@
         })(document, window.kommunicate || {});
         /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
     </script>
+
+<script type="application/javascript">
+    var loadCounter = 0;
+    var loaded = function() {
+        loadCounter += 1;
+        if (loadCounter === 2) {
+            $("iframe").attr("height", "1700");
+            $(window).scrollTo(315,0)
+        }
+    }
+</script>
 </body>
 
 </html>

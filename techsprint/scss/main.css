@@ -6,6 +6,7 @@
 
 body {
   overflow-x: hidden;
+  color: #000000 !important;
 }
 
 a {
@@ -14,8 +15,8 @@ a {
 
 .jumbo {
   height: 100vh;
-  background: url("/img/techsprint/game-mobile.jpg"), -webkit-gradient(linear, left top, left bottom, from(#00ff00), to(#0f0f0f));
-  background: url("/img/techsprint/game-mobile.jpg"), linear-gradient(to bottom, #00ff00 0%, #0f0f0f 100%);
+  /* background: url("/img/techsprint/game-mobile.jpg"), -webkit-gradient(linear, left top, left bottom, from(#00ff00), to(#0f0f0f));
+  background: url("/img/techsprint/game-mobile.jpg"), linear-gradient(to bottom, #00ff00 0%, #0f0f0f 100%); */
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
@@ -380,8 +381,17 @@ a {
   font-family: 'IBM Plex Sans';
   letter-spacing: 1px;
   font-size: 2.5em;
-  color: #e9d8a6;
+  color: #ffffff;
   margin-bottom: 1rem;
+}
+
+.register__title::after{
+  content: '';
+  background-color: #efefef;
+  display: block;
+  height: 3px;
+  width: 300px;
+  margin: 20px auto 5px;
 }
 
 /* ----------Footer--------- */
@@ -443,7 +453,7 @@ a {
   color: white;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 961px) {
   .navbar-brand img {
     height: 50px;
     padding-left: 30px;
@@ -525,5 +535,208 @@ a {
             transform: scale(1.1);
     cursor: pointer;
   }
+
+  #forms{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height: 100%;
+  }
+  #forms div{
+
+      background: #000000;
+      flex-basis: 100px;
+      height: 100px;
+      width:100%;
+      height: 100%;
+  }
+
+}
+
+@media screen and (min-width: 700px) {
+  .navbar-brand img {
+    height: 50px;
+    padding-left: 30px;
+  }
+  .jumbo__cta {
+    width: 40%;
+  }
+  .jumbo__tagline {
+    width: 60%;
+  }
+  .jumbo__title {
+    font-size: 3em;
+  }
+  .about__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about__title {
+    width: 100%;
+  }
+  .games__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .games__item-title {
+    font-size: 2.5em;
+  }
+  #valo {
+    width: 50vw;
+    height: 50vh;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  #valo:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    cursor: pointer;
+  }
+  #fortnite {
+    width: 50vw;
+    height: 50vh;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  #fortnite:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    cursor: pointer;
+  }
+  #codm {
+    width: 50vw;
+    height: 50vh;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  #codm:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    cursor: pointer;
+  }
+  #bgmi {
+    width: 50vw;
+    height: 50vh;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  #bgmi:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    cursor: pointer;
+  }
+/* 
+  #forms{
+    display:flex;
+    flex-direction:row;
+    width:50%;
+    height: 100%;
+  }
+  #forms div{
+
+      background: #000000;
+      flex-basis: 100px;
+      width:100%;
+      height: 100%;
+  } */
+
+}
+
+@media screen and (min-width: 950px) {
+  .navbar-brand img {
+    height: 50px;
+    padding-left: 30px;
+  }
+  .jumbo__cta {
+    width: 40%;
+  }
+  .jumbo__tagline {
+    width: 60%;
+  }
+  .jumbo__title {
+    font-size: 3em;
+  }
+  .about__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about__title {
+    width: 100%;
+  }
+  .games__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .games__item-title {
+    font-size: 2.5em;
+  }
+  #valo {
+    width: 50vw;
+    height: 50vh;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  #valo:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    cursor: pointer;
+  }
+  #fortnite {
+    width: 50vw;
+    height: 50vh;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  #fortnite:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    cursor: pointer;
+  }
+  #codm {
+    width: 50vw;
+    height: 50vh;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  #codm:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    cursor: pointer;
+  }
+  #bgmi {
+    width: 50vw;
+    height: 50vh;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  #bgmi:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    cursor: pointer;
+  }
+
+
 }
 /*# sourceMappingURL=main.css.map */
+
+
