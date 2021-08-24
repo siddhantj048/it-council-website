@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* zoom: 97%; */
+
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: #000 !important;
+}
+
+body {
+  background: rgb(0, 0, 0) !important;
+}
+
+.carousel {
+  position: relative;
+  margin-top: 30px;
+}
+.carousel h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 50px;
+}
+.carousel .owl-stage-outer {
+  padding: 30px 0;
+}
+.carousel .owl-nav {
+  display: none;
+}
+.carousel .owl-dots {
+  text-align: center;
+}
+.carousel .owl-dots span {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: block;
+  background: #fff;
+  border: 2px solid #01b0f8;
+  margin: 0 5px;
+}
+.carousel .owl-dots .active {
+  box-shadow: none;
+}
+.carousel .owl-dots .active span {
+  background: #01b0f8;
+  box-shadow: none;
+  height: 12px;
+  width: 12px;
+  margin-bottom: -1px;
+}
+.carousel .card {
+  background: #fff;
+  box-shadow: 0 8px 30px -7px #c9dff0;
+  margin: 0 20px;
+  padding: 0 10px;
+  border-radius: 20px;
+  border: 0;
+}
+.carousel .card .card-img-top {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 15px auto 0;
+  box-shadow: 0 8px 20px -4px #95abbb;
+  width: 100px;
+  height: 100px;
+}
+.carousel .card h5 {
+  color: #01b0f8;
+  font-size: 21px;
+  line-height: 1.3;
+}
+.carousel .card h5 span {
+  font-size: 18px;
+  color: #666666;
+}
+.carousel .card p {
+  font-size: 18px;
+  color: #555;
+  padding-bottom: 15px;
+}
+.carousel .active {
+  opacity: 0.2;
+  transition: all 0.3s;
+}
+.carousel .center {
+  opacity: 1;
+  transform: scale(1.05);
+
+}
+.carousel .center h5 {
+  font-size: 24px;
+}
+.carousel .center h5 span {
+  font-size: 20px;
+}
+.carousel .center .card-img-top {
+  max-width: 100%;
+  height: 120px;
+  width: 120px;
+}
+
+@media (max-width: 850px) {
+  .slider {
+    margin-top: 20px;
+  }
+  #volume1 {
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.67), rgba(117, 19, 93, 0.649)),
+    url('/Magazine/TechBytes/18-08-2021/Thumbnail.png');
+    width: auto;
+    height: auto;
+    background-size:cover;
+    object-fit:fill;
+    border-radius: 15%;
+    color: white;
+    padding: 20px;
+  }
+  
+  #volume2 {
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.67), rgba(117, 19, 93, 0.649)),
+    url('/Magazine/TechBytes/18-08-2021/Thumbnail.png');
+    width: 50% !important;
+    height: auto;
+    background-size: contain;
+    object-fit: contain;
+    border-radius: 15%;
+    color: white;
+    padding: 20px;
+  }
+  
+  #volume3 {
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.67), rgba(117, 19, 93, 0.649)),
+    url('/Magazine/TechBytes/18-08-2021/Thumbnail.png');
+    width: auto;
+    height: auto;
+    background-size: contain;
+    object-fit: contain;
+    border-radius: 15%;
+    color: white;
+    padding: 20px;
+  
+  }
+  
+  #volume4 {
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.67), rgba(117, 19, 93, 0.649)),
+    url('/Magazine/TechBytes/18-08-2021/Thumbnail.png');
+    width: auto;
+    height: auto;
+    background-size: contain;
+    object-fit: contain;
+    border-radius: 15%;
+    color: white;
+    padding: 20px;
+  }
+  
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+  outline: 0;
+}
+.owl-carousel button.owl-dot {
+  outline: 0;
+}
+
+.col-md-4{
+  display: inline-block;
+  margin-left:-10px;
+}
+.col-md-4 img{
+  width:100%;
+  height:auto;
+}
+  
+body .carousel-control-prev-icon,
+body .carousel-indicators li,
+body .carousel-control-next-icon{
+  background-color:#000;
+}
+
+span.carousel-control-prev-icon {
+ position: relative;
+ bottom: 40px;
+ right: 40px;
+}
+
+span.carousel-control-next-icon {
+ position: relative;
+ bottom: 40px;
+}
+
+#volume1 {
+  background-image:
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.67), rgba(117, 19, 93, 0.649)),
+  url('/Magazine/TechBytes/18-08-2021/Thumbnail.png');
+  width: 100%;
+  height: 45vw;
+  background-size: contain;
+  object-fit: contain;
+  border-radius: 15%;
+  color: white;
+  padding: 20px;
+}
+
+#volume2 {
+  background-image:
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.67), rgba(117, 19, 93, 0.649)),
+  url('/Magazine/TechBytes/18-08-2021/Thumbnail.png');
+  width: 100%;
+  height: 45vw;
+  background-size: contain;
+  object-fit: contain;
+  border-radius: 15%;
+  color: white;
+  padding: 20px;
+}
+
+#volume3 {
+  background-image:
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.67), rgba(117, 19, 93, 0.649)),
+  url('/Magazine/TechBytes/18-08-2021/Thumbnail.png');
+  width: 100%;
+  height: 45vw;
+  background-size: contain;
+  object-fit: contain;
+  border-radius: 15%;
+  color: white;
+  padding: 20px;
+
+}
+
+#volume4 {
+  background-image:
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.67), rgba(117, 19, 93, 0.649)),
+  url('/Magazine/TechBytes/18-08-2021/Thumbnail.png');
+  width: 100%;
+  height: 45vw;
+  background-size: contain;
+  object-fit: contain;
+  border-radius: 15%;
+  color: white;
+  padding: 20px;
+}
+
+.arrow {
+  position: absolute;
+  top: 0vw !important; 
+  left: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+  color: rgba(255, 255, 255, 0.163);
+}
+
